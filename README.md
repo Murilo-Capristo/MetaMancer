@@ -1,7 +1,8 @@
-# 🚀 MetaMancer – Projeto Pessoal em Java Spring Boot (MVC)
-
 Desenvolvi o **MetaMancer** como um projeto pessoal para **praticar Java e Spring Boot**, aplicando o padrão **MVC (Model-View-Controller)**.  
 A aplicação permite o **gerenciamento de personagens**, com CRUD completo, interface dinâmica e boas práticas de arquitetura.  
+
+# 🚀 MetaMancer – Projeto Pessoal em Java Spring Boot (MVC)
+
 
 ## 🔹 Destaques:
 - CRUD de personagens com **Spring Boot** e **Spring Data JPA**  
