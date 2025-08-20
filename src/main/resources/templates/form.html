@@ -37,16 +37,16 @@
 
         <!-- Nome -->
         <fieldset class="fieldset m-4">
-            <legend class="fieldset-legend" >Nome</legend>
+            <legend class="fieldset-legend" th:text="#{name}" ></legend>
             <input th:field="*{name}" th:errorclass="input-error" type="text" class="input" />
             <p class="label text-error" th:errors="*{name}"></p>
         </fieldset>
 
         <!-- Espécie -->
         <fieldset class="fieldset m-4">
-            <legend class="fieldset-legend">Espécie</legend>
+            <legend class="fieldset-legend" th:text="#{species}"></legend>
             <select th:field="*{species}" th:errorclass="input-error" class="select select-primary">
-                <option value="" disabled selected>Escolha uma Espécie</option>
+                <option value="" disabled selected th:text="#{chooseSpecie}"></option>
                 <option value="HUMAN">HUMAN</option>
                 <option value="CYBORG">CYBORG</option>
                 <option value="ALIEN">ALIEN</option>
@@ -58,14 +58,14 @@
 
         <!-- Nível Inicial -->
         <fieldset class="fieldset m-4">
-            <legend class="fieldset-legend" >Nível Inicial</legend>
+            <legend class="fieldset-legend" th:text="#{startingLevel}"></legend>
             <input th:field="*{startingLevel}" th:errorclass="input-error" id="range-score" type="range" min="1" max="100" class="range range-primary" />
             <p id="label-score" class="label" th:text="${'Level ' + character.startingLevel}"></p>
         </fieldset>
 
         <!-- Habilidade Especial -->
         <fieldset class="fieldset m-4">
-            <legend class="fieldset-legend" >Habilidade Especial</legend>
+            <legend class="fieldset-legend" th:text="#{specialAbility}">Habilidade Especial</legend>
             <input th:field="*{specialAbility}" th:errorclass="input-error" type="text" class="input" />
             <p class="label text-error" th:errors="*{specialAbility}"></p>
         </fieldset>
@@ -85,8 +85,8 @@
 
         <!-- Botões -->
         <field class="flex justify-between mt-6">
-            <a href="/character" class="btn btn-neutral">Cancelar</a>
-            <button type="submit" class="btn btn-primary">Salvar Personagem</button>
+            <a href="/character" class="btn btn-neutral" th:text="#{cancel}"></a>
+            <button type="submit" class="btn btn-primary" th:text="#{save}"></button>
         </field>
     </form>
 

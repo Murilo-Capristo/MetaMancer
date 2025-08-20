@@ -38,7 +38,7 @@ public class CharacterController {
     public String create(@Valid Character character, BindingResult result, RedirectAttributes redirect){
         if (result.hasErrors()) return "form";
         characterService.save(character);
-        var message = messageSource.getMessage("character.save.sucess", null , LocaleContextHolder.getLocale());
+        var message = messageSource.getMessage("character.save.success", null , LocaleContextHolder.getLocale());
         redirect.addFlashAttribute("message", message);
         return "redirect:/character";
     }
