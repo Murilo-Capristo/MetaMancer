@@ -1,21 +1,4 @@
 /gradlew text eol=lf
 *.bat text eol=crlf
 *.jar binary
-#  Forçar Java como linguagem principal
-*.java linguist-detectable=true
-*.java linguist-language=Java
 
-#  Manter HTML, CSS e JS visíveis
-*.html linguist-detectable=true
-*.css linguist-detectable=true
-*.js linguist-detectable=true
-
-#  Tratar arquivos de template e estáticos como "vendored" (aparecem mas com menos peso)
-src/main/resources/templates/* linguist-vendored
-src/main/resources/static/* linguist-vendored
-
-#  Ignorar arquivos compilados e pastas de build
-*.class linguist-detectable=false
-/target/* linguist-vendored
-/bin/* linguist-vendored
-/out/* linguist-vendored
