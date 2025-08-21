@@ -1,6 +1,10 @@
 /gradlew text eol=lf
 *.bat text eol=crlf
 *.jar binary
-*.html linguist-detectable=false
-*.css linguist-detectable=false
-*.js linguist-detectable=false
+*.java linguist-detectable=true
+*.java linguist-language=Java
+
+# Mantém HTML, CSS e JS visíveis
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
